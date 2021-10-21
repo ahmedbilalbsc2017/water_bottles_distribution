@@ -1,0 +1,62 @@
+/************USER DATA**********/
+Admin:{
+    "name":"Bilal",
+    "role":"Admin",
+    "email":"adminBilal@testing.com",
+    "password":"admin",
+    "address":{
+        "houseNumber":"Z/847",
+        "street":"15",
+        "city": "Gujranwala",
+        "zip": "52250"
+    },
+    "contact":"+923451481947"
+}
+
+delivery_boy:{
+    "name":"Ahmed",
+    "role":"Delivery Boy",
+    "email":"emp_ahmed@testing.com",
+    "password":"empAhmed",
+    "address":{
+        "houseNumber":"Z/847",
+        "street":"15",
+        "city": "Gujranwala",
+        "zip": "52250"
+    },
+    "contact":"+923451481947"
+}
+
+customer:{
+    "name":"Ahmed Bilal",
+    "role":"Customer",
+    "email":"ahmedBilal@testing.com",
+    "password":"customer",
+    "address":{
+        "houseNumber":"Z/847",
+        "street":"15",
+        "city": "Gujranwala",
+        "zip": "52250"
+    },
+    "contact":"+923451481947",
+    "orderDetails":{
+        "product": "616911cb437f36a7cee62553",
+        "billing":"Monthly",
+        "bottleDelivery": "Daily",
+        "deliveryBoy": "61690ea94d5abe126fdee016"
+    }
+}
+
+/******Add Product*******/
+product:{
+    "productName":"Accuafina",
+    "capacity": "5 Ltr",
+    "quantity":"10",
+    "pricePerBottle": "550"
+}
+
+
+/********Assign Delivery Boy********/
+{ 
+   "orderDetails.deliveryBoy": "Delivery Boy Id"
+}
