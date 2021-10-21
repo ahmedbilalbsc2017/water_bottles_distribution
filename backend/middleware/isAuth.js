@@ -16,7 +16,6 @@ exports.roleAuthorization = (roles) => async (req, res, next) => {
       userId: decodedToken.userId,
       roles,
     };
-    console.log();
     const foundUser = await User.findById(data.userId);
     if (!foundUser) {
       const error = new Error('Not authenticated');
