@@ -315,8 +315,6 @@ exports.deliveryReport = async (req, res, next) => {
         totalBill: updatedBill,
       };
 
-      // console.log(data);
-
       const result = await Receipt.findOneAndUpdate(
         { customer: customerId },
         data,

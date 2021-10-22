@@ -1,0 +1,21 @@
+
+/***************************USER ROUTES*****************************************/
+
+1.  http://localhost:8080/auth/signup
+2.  http://localhost:8080/auth/login
+3.  http://localhost:8080/auth/getUser
+4.  http://localhost:8080/auth/getUser/:userId
+5.  http://localhost:8080/auth/updateUser/:userId
+6.  http://localhost:8080/auth/deleteUser/:userId
+7.  http://localhost:8080/auth/assigningDeliveryBoy/:userId
+8.  http://localhost:8080/auth/getCustomer
+9.  http://localhost:8080/auth/deliveryReport
+10.  http://localhost:8080/auth/getCustomer/:userId
+
+/***************************STOCK ROUTES*****************************************/
+
+1.  http://localhost:8080/stock/addProduct
+2.  http://localhost:8080/stock/getProduct
+3.  http://localhost:8080/stock/getProductById/:prodId
+4.  http://localhost:8080/stock/updateProduct/:prodId
+5.  http://localhost:8080/stock/deleteProduct/:prodId
