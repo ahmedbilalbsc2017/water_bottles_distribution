@@ -218,8 +218,8 @@ exports.assignDeliveryBoy = async (req, res, next) => {
 exports.getUserToDeliveryBoy = async (req, res, next) => {
   try {
     deliveryBoy = req.userId;
-    console.log('User ID ', req.userId);
-    console.log('Delivery Boy ', deliveryBoy);
+    // console.log('User ID ', req.userId);
+    // console.log('Delivery Boy ', deliveryBoy);
     const users = await User.find({
       role: 'Customer',
       ['orderDetails.deliveryBoy']: req.userId,

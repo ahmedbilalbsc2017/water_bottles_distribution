@@ -14,7 +14,7 @@ router.get(
   authController.getUser
 );
 
-//['Admin', 'Delivery Boy', 'Customer']
+//isAuth.roleAuthorization['Admin', 'Delivery Boy', 'Customer']
 
 router.get(
   '/getUser/:userId',
