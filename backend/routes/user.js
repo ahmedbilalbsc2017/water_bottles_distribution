@@ -52,6 +52,11 @@ router.get(
 );
 
 router.get(
+  '/billing',
+  isAuth.roleAuthorization(['Admin', 'Delivery Boy', 'Customer']),
+  authController.getReceipt
+);
+router.get(
   '/getCustomer/:userId',
   isAuth.roleAuthorization(['Delivery Boy']),
   authController.getUserByIdToDeliveryBoy

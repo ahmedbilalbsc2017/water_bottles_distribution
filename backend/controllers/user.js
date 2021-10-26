@@ -332,3 +332,26 @@ exports.deliveryReport = async (req, res, next) => {
     next(err);
   }
 };
+
+exports.getReceipt = async (req, res, next) => {
+  const customerId = req.query.customerId;
+  if (!customerId) {
+    const error = new Error('User not found.');
+    error.statusCode = 401;
+    throw error;
+  }
+  try {
+    let receipt = await Receipt.findOne({ customer: customerId })
+      .populate('customer', '-_id name contact address')
+      .populate('product', '-_id productName')
+      .populate('deliveredBy', '-_id name ')
+      .exec();
+
+    res.status(200).json({
+      message: 'Receipt',
+      result: receipt,
+    });
+  } catch (error) {
+    next(error);
+  }
+};
