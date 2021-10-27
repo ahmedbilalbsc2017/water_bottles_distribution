@@ -10,7 +10,8 @@
 7.  http://localhost:8080/auth/assigningDeliveryBoy/:userId
 8.  http://localhost:8080/auth/getCustomer
 9.  http://localhost:8080/auth/deliveryReport
-10.  http://localhost:8080/auth/getCustomer/:userId
+10. http://localhost:8080/auth/getCustomer/:userId
+11. localhost:8080/auth/billing?customerId=617118e9a62c40df1db5bca9
 
 /***************************STOCK ROUTES*****************************************/
 

@@ -7,7 +7,6 @@ const router = express.Router();
 router.post('/signup', authController.signup);
 router.post('/login', authController.login);
 
-//Admin Routes
 router.get(
   '/getUser',
   isAuth.roleAuthorization(['Admin']),
@@ -38,14 +37,13 @@ router.patch(
   authController.assignDeliveryBoy
 );
 
-//Delivery Boy Routes
 router.get(
   '/getCustomer',
   isAuth.roleAuthorization(['Delivery Boy']),
   authController.getUserToDeliveryBoy
 );
 
-router.get(
+router.post(
   '/deliveryReport',
   isAuth.roleAuthorization(['Admin', 'Delivery Boy']),
   authController.deliveryReport
@@ -61,7 +59,5 @@ router.get(
   isAuth.roleAuthorization(['Delivery Boy']),
   authController.getUserByIdToDeliveryBoy
 );
-
-//Customer routes
 
 module.exports = router;
